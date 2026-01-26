@@ -7,7 +7,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className=" bg-zinc-950 text-zinc-50 antialiased">
+      <body className=" bg-[#0B1020] text-zinc-50 antialiased">
         {children}
       </body>
     </html>

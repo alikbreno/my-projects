@@ -1,0 +1,118 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow3">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  
+  <!-- Main Container -->
+  <rect x="100" y="60" width="1200" height="760" rx="18" fill="#151922" filter="url(#shadow3)"/>
+  
+  <!-- Header -->
+  <rect x="100" y="60" width="1200" height="75" rx="18" fill="#1f2937"/>
+  <text x="140" y="108" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#fff">💬 Team Messenger</text>
+  
+  <!-- Search -->
+  <rect x="850" y="85" width="280" height="38" rx="19" fill="#0f1419" stroke="#3b82f6" stroke-width="1"/>
+  <text x="870" y="110" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">Search messages...</text>
+  
+  <!-- Status indicator -->
+  <circle cx="1230" cy="104" r="8" fill="#10b981"/>
+  <text x="1250" y="110" font-family="Arial, sans-serif" font-size="13" fill="#10b981">Online</text>
+  
+  <!-- Sidebar - Channels -->
+  <rect x="100" y="135" width="280" height="685" fill="#1f2937"/>
+  
+  <!-- Sidebar Header -->
+  <text x="120" y="170" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#9ca3af">CHANNELS</text>
+  
+  <!-- Channel Items -->
+  <rect x="115" y="190" width="250" height="50" rx="8" fill="#3b82f6" opacity="0.2"/>
+  <text x="140" y="220" font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#3b82f6"># general</text>
+  <circle cx="335" cy="215" r="10" fill="#ef4444"/>
+  <text x="335" y="220" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">5</text>
+  
+  <text x="140" y="275" font-family="Arial, sans-serif" font-size="15" fill="#9ca3af"># development</text>
+  <circle cx="335" cy="270" r="10" fill="#6b7280"/>
+  <text x="335" y="275" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">2</text>
+  
+  <text x="140" y="325" font-family="Arial, sans-serif" font-size="15" fill="#9ca3af"># design</text>
+  
+  <text x="140" y="375" font-family="Arial, sans-serif" font-size="15" fill="#9ca3af"># marketing</text>
+  
+  <text x="120" y="430" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#9ca3af">DIRECT MESSAGES</text>
+  
+  <!-- DM Items -->
+  <rect x="115" y="450" width="250" height="45" rx="8" fill="transparent"/>
+  <circle cx="130" cy="472" r="12" fill="#8b5cf6"/>
+  <text x="155" y="477" font-family="Arial, sans-serif" font-size="14" fill="#d1d5db">Sarah Johnson</text>
+  <circle cx="335" cy="472" r="5" fill="#10b981"/>
+  
+  <circle cx="130" cy="522" r="12" fill="#f59e0b"/>
+  <text x="155" y="527" font-family="Arial, sans-serif" font-size="14" fill="#d1d5db">Mike Chen</text>
+  
+  <circle cx="130" cy="572" r="12" fill="#ec4899"/>
+  <text x="155" y="577" font-family="Arial, sans-serif" font-size="14" fill="#d1d5db">Emma Wilson</text>
+  <circle cx="335" cy="572" r="5" fill="#10b981"/>
+  
+  <!-- Main Chat Area -->
+  <rect x="380" y="135" width="920" height="685" fill="#151922"/>
+  
+  <!-- Chat Header -->
+  <rect x="380" y="135" width="920" height="65" fill="#1f2937"/>
+  <text x="410" y="175" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#fff"># general</text>
+  <text x="510" y="178" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">124 members</text>
+  
+  <!-- Chat Messages Area -->
+  <!-- Message 1 -->
+  <circle cx="410" cy="240" r="18" fill="#8b5cf6"/>
+  <text x="440" y="238" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff">Sarah Johnson</text>
+  <text x="570" y="238" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">10:45 AM</text>
+  <text x="440" y="260" font-family="Arial, sans-serif" font-size="14" fill="#d1d5db">Hey team! Just finished the new dashboard design.</text>
+  <text x="440" y="280" font-family="Arial, sans-serif" font-size="14" fill="#d1d5db">Can someone review it? 🎨</text>
+  
+  <!-- Message 2 -->
+  <circle cx="410" cy="340" r="18" fill="#f59e0b"/>
+  <text x="440" y="338" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff">Mike Chen</text>
+  <text x="540" y="338" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">10:47 AM</text>
+  <text x="440" y="360" font-family="Arial, sans-serif" font-size="14" fill="#d1d5db">Looks great! The color scheme is perfect 👍</text>
+  
+  <!-- Message with attachment -->
+  <circle cx="410" cy="420" r="18" fill="#ec4899"/>
+  <text x="440" y="418" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff">Emma Wilson</text>
+  <text x="570" y="418" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">10:50 AM</text>
+  <text x="440" y="440" font-family="Arial, sans-serif" font-size="14" fill="#d1d5db">I've uploaded the final mockups here:</text>
+  
+  <rect x="440" y="455" width="350" height="80" rx="8" fill="#1f2937" stroke="#3b82f6" stroke-width="1"/>
+  <rect x="450" y="465" width="60" height="60" rx="6" fill="#3b82f6" opacity="0.2"/>
+  <text x="480" y="500" font-family="Arial, sans-serif" font-size="24" fill="#3b82f6" text-anchor="middle">📎</text>
+  <text x="525" y="485" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#fff">dashboard-final.fig</text>
+  <text x="525" y="505" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">Figma File • 2.4 MB</text>
+  <text x="525" y="523" font-family="Arial, sans-serif" font-size="11" fill="#3b82f6">Click to download</text>
+  
+  <!-- Message 4 -->
+  <circle cx="410" cy="580" r="18" fill="#10b981"/>
+  <text x="440" y="578" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff">Alex Rivera</text>
+  <text x="555" y="578" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">11:02 AM</text>
+  <text x="440" y="600" font-family="Arial, sans-serif" font-size="14" fill="#d1d5db">Perfect! I'll implement this today ⚡</text>
+  
+  <!-- Typing Indicator -->
+  <circle cx="410" cy="655" r="18" fill="#6366f1"/>
+  <text x="440" y="653" font-family="Arial, sans-serif" font-size="14" fill="#6b7280" font-style="italic">David typing...</text>
+  <circle cx="440" cy="673" r="3" fill="#6b7280"/>
+  <circle cx="455" cy="673" r="3" fill="#6b7280"/>
+  <circle cx="470" cy="673" r="3" fill="#6b7280"/>
+  
+  <!-- Message Input -->
+  <rect x="395" y="730" width="890" height="70" rx="12" fill="#1f2937"/>
+  <rect x="420" y="750" width="720" height="35" rx="8" fill="#0f1419" stroke="#374151" stroke-width="1"/>
+  <text x="440" y="775" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">Type a message...</text>
+  
+  <!-- Send Button -->
+  <rect x="1160" y="750" width="100" height="35" rx="8" fill="#3b82f6"/>
+  <text x="1210" y="774" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">Send</text>
+  
+  <!-- Attachment Icon -->
+  <circle cx="1100" cy="767" r="15" fill="#374151"/>
+  <text x="1100" y="773" font-family="Arial, sans-serif" font-size="16" fill="#9ca3af" text-anchor="middle">📎</text>
+</svg>

@@ -1,0 +1,170 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow4">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Main Container -->
+  <rect x="80" y="50" width="1240" height="800" rx="20" fill="#16141f" filter="url(#shadow4)"/>
+  
+  <!-- Top Bar -->
+  <rect x="80" y="50" width="1240" height="70" rx="20" fill="#1f1d2e"/>
+  <text x="120" y="93" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">Visual Studio Code</text>
+  
+  <!-- Menu Items -->
+  <text x="340" y="90" font-family="Arial, sans-serif" font-size="13" fill="#a1a1aa">File</text>
+  <text x="390" y="90" font-family="Arial, sans-serif" font-size="13" fill="#a1a1aa">Edit</text>
+  <text x="440" y="90" font-family="Arial, sans-serif" font-size="13" fill="#a1a1aa">View</text>
+  <text x="495" y="90" font-family="Arial, sans-serif" font-size="13" fill="#a1a1aa">Go</text>
+  <text x="535" y="90" font-family="Arial, sans-serif" font-size="13" fill="#a1a1aa">Run</text>
+  <text x="580" y="90" font-family="Arial, sans-serif" font-size="13" fill="#a1a1aa">Terminal</text>
+  <text x="655" y="90" font-family="Arial, sans-serif" font-size="13" fill="#a1a1aa">Help</text>
+  
+  <!-- Window Controls -->
+  <circle cx="1240" cy="85" r="6" fill="#f87171"/>
+  <circle cx="1265" cy="85" r="6" fill="#fbbf24"/>
+  <circle cx="1290" cy="85" r="6" fill="#4ade80"/>
+  
+  <!-- Sidebar -->
+  <rect x="80" y="120" width="60" height="730" fill="#1f1d2e"/>
+  
+  <!-- Sidebar Icons -->
+  <rect x="85" y="140" width="50" height="50" rx="8" fill="#6366f1" opacity="0.2"/>
+  <text x="110" y="173" font-family="Arial, sans-serif" font-size="24" fill="#6366f1" text-anchor="middle">📁</text>
+  
+  <text x="110" y="243" font-family="Arial, sans-serif" font-size="24" fill="#71717a" text-anchor="middle">🔍</text>
+  <text x="110" y="313" font-family="Arial, sans-serif" font-size="24" fill="#71717a" text-anchor="middle">⚙️</text>
+  <text x="110" y="383" font-family="Arial, sans-serif" font-size="24" fill="#71717a" text-anchor="middle">🔌</text>
+  
+  <!-- File Explorer -->
+  <rect x="140" y="120" width="250" height="730" fill="#1a1825"/>
+  
+  <text x="160" y="155" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#a1a1aa">EXPLORER</text>
+  
+  <!-- Project Tree -->
+  <text x="160" y="190" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#e5e5e5">▼ my-project</text>
+  <text x="180" y="220" font-family="Courier New, monospace" font-size="12" fill="#a1a1aa">▼ src</text>
+  <text x="200" y="245" font-family="Courier New, monospace" font-size="12" fill="#6366f1">▼ components</text>
+  <text x="220" y="270" font-family="Courier New, monospace" font-size="12" fill="#38bdf8">  App.tsx</text>
+  <text x="220" y="295" font-family="Courier New, monospace" font-size="12" fill="#a1a1aa">  Header.tsx</text>
+  <text x="220" y="320" font-family="Courier New, monospace" font-size="12" fill="#a1a1aa">  Sidebar.tsx</text>
+  <text x="200" y="345" font-family="Courier New, monospace" font-size="12" fill="#a1a1aa">▶ hooks</text>
+  <text x="200" y="370" font-family="Courier New, monospace" font-size="12" fill="#a1a1aa">▶ utils</text>
+  <text x="200" y="395" font-family="Courier New, monospace" font-size="12" fill="#10b981">  index.tsx</text>
+  <text x="200" y="420" font-family="Courier New, monospace" font-size="12" fill="#8b5cf6">  styles.css</text>
+  <text x="180" y="445" font-family="Courier New, monospace" font-size="12" fill="#a1a1aa">▶ public</text>
+  <text x="180" y="470" font-family="Courier New, monospace" font-size="12" fill="#f59e0b">  package.json</text>
+  <text x="180" y="495" font-family="Courier New, monospace" font-size="12" fill="#a1a1aa">  tsconfig.json</text>
+  <text x="180" y="520" font-family="Courier New, monospace" font-size="12" fill="#a1a1aa">  README.md</text>
+  
+  <!-- Editor Area -->
+  <rect x="390" y="120" width="930" height="730" fill="#16141f"/>
+  
+  <!-- Tab Bar -->
+  <rect x="390" y="120" width="180" height="40" fill="#1a1825"/>
+  <text x="410" y="146" font-family="Arial, sans-serif" font-size="13" fill="#38bdf8">App.tsx</text>
+  <circle cx="550" cy="140" r="3" fill="#38bdf8"/>
+  
+  <rect x="570" y="120" width="180" height="40" fill="#232130"/>
+  <text x="590" y="146" font-family="Arial, sans-serif" font-size="13" fill="#a1a1aa">Header.tsx</text>
+  
+  <!-- Editor Content -->
+  <rect x="390" y="160" width="930" height="690" fill="#16141f"/>
+  
+  <!-- Line numbers -->
+  <rect x="390" y="160" width="50" height="690" fill="#1a1825"/>
+  <text x="420" y="195" font-family="Courier New, monospace" font-size="13" fill="#52525b" text-anchor="end">1</text>
+  <text x="420" y="220" font-family="Courier New, monospace" font-size="13" fill="#52525b" text-anchor="end">2</text>
+  <text x="420" y="245" font-family="Courier New, monospace" font-size="13" fill="#52525b" text-anchor="end">3</text>
+  <text x="420" y="270" font-family="Courier New, monospace" font-size="13" fill="#52525b" text-anchor="end">4</text>
+  <text x="420" y="295" font-family="Courier New, monospace" font-size="13" fill="#52525b" text-anchor="end">5</text>
+  <text x="420" y="320" font-family="Courier New, monospace" font-size="13" fill="#52525b" text-anchor="end">6</text>
+  <text x="420" y="345" font-family="Courier New, monospace" font-size="13" fill="#52525b" text-anchor="end">7</text>
+  <text x="420" y="370" font-family="Courier New, monospace" font-size="13" fill="#52525b" text-anchor="end">8</text>
+  <text x="420" y="395" font-family="Courier New, monospace" font-size="13" fill="#52525b" text-anchor="end">9</text>
+  <text x="420" y="420" font-family="Courier New, monospace" font-size="13" fill="#52525b" text-anchor="end">10</text>
+  <text x="420" y="445" font-family="Courier New, monospace" font-size="13" fill="#52525b" text-anchor="end">11</text>
+  <text x="420" y="470" font-family="Courier New, monospace" font-size="13" fill="#52525b" text-anchor="end">12</text>
+  <text x="420" y="495" font-family="Courier New, monospace" font-size="13" fill="#52525b" text-anchor="end">13</text>
+  <text x="420" y="520" font-family="Courier New, monospace" font-size="13" fill="#52525b" text-anchor="end">14</text>
+  <text x="420" y="545" font-family="Courier New, monospace" font-size="13" fill="#52525b" text-anchor="end">15</text>
+  
+  <!-- Code -->
+  <text x="460" y="195" font-family="Courier New, monospace" font-size="14" fill="#c678dd">import</text>
+  <text x="530" y="195" font-family="Courier New, monospace" font-size="14" fill="#e5e5e5">React</text>
+  <text x="605" y="195" font-family="Courier New, monospace" font-size="14" fill="#c678dd">from</text>
+  <text x="665" y="195" font-family="Courier New, monospace" font-size="14" fill="#98c379">'react'</text>
+  
+  <text x="460" y="220" font-family="Courier New, monospace" font-size="14" fill="#c678dd">import</text>
+  <text x="530" y="220" font-family="Courier New, monospace" font-size="14" fill="#e5c07b">Header</text>
+  <text x="615" y="220" font-family="Courier New, monospace" font-size="14" fill="#c678dd">from</text>
+  <text x="675" y="220" font-family="Courier New, monospace" font-size="14" fill="#98c379">'./Header'</text>
+  
+  <text x="460" y="270" font-family="Courier New, monospace" font-size="14" fill="#c678dd">function</text>
+  <text x="555" y="270" font-family="Courier New, monospace" font-size="14" fill="#61afef">App</text>
+  <text x="600" y="270" font-family="Courier New, monospace" font-size="14" fill="#abb2bf">()</text>
+  <text x="635" y="270" font-family="Courier New, monospace" font-size="14" fill="#abb2bf">{</text>
+  
+  <text x="490" y="295" font-family="Courier New, monospace" font-size="14" fill="#c678dd">const</text>
+  <text x="560" y="295" font-family="Courier New, monospace" font-size="14" fill="#e06c75">[</text>
+  <text x="575" y="295" font-family="Courier New, monospace" font-size="14" fill="#e5e5e5">count</text>
+  <text x="640" y="295" font-family="Courier New, monospace" font-size="14" fill="#abb2bf">,</text>
+  <text x="660" y="295" font-family="Courier New, monospace" font-size="14" fill="#e5e5e5">setCount</text>
+  <text x="755" y="295" font-family="Courier New, monospace" font-size="14" fill="#e06c75">]</text>
+  <text x="775" y="295" font-family="Courier New, monospace" font-size="14" fill="#56b6c2">=</text>
+  <text x="800" y="295" font-family="Courier New, monospace" font-size="14" fill="#61afef">useState</text>
+  <text x="900" y="295" font-family="Courier New, monospace" font-size="14" fill="#abb2bf">(</text>
+  <text x="915" y="295" font-family="Courier New, monospace" font-size="14" fill="#d19a66">0</text>
+  <text x="930" y="295" font-family="Courier New, monospace" font-size="14" fill="#abb2bf">)</text>
+  
+  <text x="490" y="345" font-family="Courier New, monospace" font-size="14" fill="#c678dd">return</text>
+  <text x="565" y="345" font-family="Courier New, monospace" font-size="14" fill="#abb2bf">(</text>
+  
+  <text x="520" y="370" font-family="Courier New, monospace" font-size="14" fill="#e06c75">&lt;</text>
+  <text x="535" y="370" font-family="Courier New, monospace" font-size="14" fill="#e06c75">div</text>
+  <text x="580" y="370" font-family="Courier New, monospace" font-size="14" fill="#d19a66">className</text>
+  <text x="690" y="370" font-family="Courier New, monospace" font-size="14" fill="#56b6c2">=</text>
+  <text x="705" y="370" font-family="Courier New, monospace" font-size="14" fill="#98c379">"container"</text>
+  <text x="825" y="370" font-family="Courier New, monospace" font-size="14" fill="#e06c75">&gt;</text>
+  
+  <text x="550" y="395" font-family="Courier New, monospace" font-size="14" fill="#e06c75">&lt;</text>
+  <text x="565" y="395" font-family="Courier New, monospace" font-size="14" fill="#e06c75">Header</text>
+  <text x="645" y="395" font-family="Courier New, monospace" font-size="14" fill="#e06c75">/&gt;</text>
+  
+  <text x="550" y="420" font-family="Courier New, monospace" font-size="14" fill="#e06c75">&lt;</text>
+  <text x="565" y="420" font-family="Courier New, monospace" font-size="14" fill="#e06c75">h1</text>
+  <text x="600" y="420" font-family="Courier New, monospace" font-size="14" fill="#e06c75">&gt;</text>
+  <text x="615" y="420" font-family="Courier New, monospace" font-size="14" fill="#abb2bf">Count:</text>
+  <text x="690" y="420" font-family="Courier New, monospace" font-size="14" fill="#abb2bf">{</text>
+  <text x="705" y="420" font-family="Courier New, monospace" font-size="14" fill="#e5e5e5">count</text>
+  <text x="760" y="420" font-family="Courier New, monospace" font-size="14" fill="#abb2bf">}</text>
+  <text x="775" y="420" font-family="Courier New, monospace" font-size="14" fill="#e06c75">&lt;/</text>
+  <text x="805" y="420" font-family="Courier New, monospace" font-size="14" fill="#e06c75">h1</text>
+  <text x="840" y="420" font-family="Courier New, monospace" font-size="14" fill="#e06c75">&gt;</text>
+  
+  <text x="520" y="445" font-family="Courier New, monospace" font-size="14" fill="#e06c75">&lt;/</text>
+  <text x="550" y="445" font-family="Courier New, monospace" font-size="14" fill="#e06c75">div</text>
+  <text x="590" y="445" font-family="Courier New, monospace" font-size="14" fill="#e06c75">&gt;</text>
+  
+  <text x="490" y="470" font-family="Courier New, monospace" font-size="14" fill="#abb2bf">)</text>
+  
+  <text x="460" y="495" font-family="Courier New, monospace" font-size="14" fill="#abb2bf">}</text>
+  
+  <text x="460" y="545" font-family="Courier New, monospace" font-size="14" fill="#c678dd">export</text>
+  <text x="540" y="545" font-family="Courier New, monospace" font-size="14" fill="#c678dd">default</text>
+  <text x="630" y="545" font-family="Courier New, monospace" font-size="14" fill="#e5e5e5">App</text>
+  
+  <!-- Cursor -->
+  <rect x="650" y="530" width="2" height="18" fill="#fff"/>
+  
+  <!-- Bottom Status Bar -->
+  <rect x="390" y="810" width="930" height="40" fill="#1f1d2e"/>
+  <text x="410" y="835" font-family="Arial, sans-serif" font-size="12" fill="#a1a1aa">TypeScript React</text>
+  <text x="570" y="835" font-family="Arial, sans-serif" font-size="12" fill="#a1a1aa">UTF-8</text>
+  <text x="650" y="835" font-family="Arial, sans-serif" font-size="12" fill="#a1a1aa">LF</text>
+  <text x="700" y="835" font-family="Arial, sans-serif" font-size="12" fill="#a1a1aa">Ln 10, Col 7</text>
+  
+  <circle cx="1260" cy="830" r="5" fill="#10b981"/>
+  <text x="1275" y="835" font-family="Arial, sans-serif" font-size="12" fill="#10b981">No Errors</text>
+</svg>

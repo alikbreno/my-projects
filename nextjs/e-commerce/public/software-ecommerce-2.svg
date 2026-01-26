@@ -1,0 +1,112 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="8" stdDeviation="15" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Main Container -->
+  <rect x="100" y="80" width="1200" height="720" rx="20" fill="#181830" filter="url(#shadow2)"/>
+  
+  <!-- Header -->
+  <rect x="100" y="80" width="1200" height="80" rx="20" fill="#7b2ff7" opacity="0.15"/>
+  <text x="140" y="130" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff">Project Manager Pro</text>
+  
+  <!-- Tabs -->
+  <rect x="140" y="185" width="120" height="40" rx="10" fill="#7b2ff7"/>
+  <text x="200" y="212" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">Board</text>
+  
+  <text x="320" y="212" font-family="Arial, sans-serif" font-size="15" fill="#888" text-anchor="middle">List</text>
+  <text x="430" y="212" font-family="Arial, sans-serif" font-size="15" fill="#888" text-anchor="middle">Calendar</text>
+  <text x="560" y="212" font-family="Arial, sans-serif" font-size="15" fill="#888" text-anchor="middle">Timeline</text>
+  
+  <!-- Filter Button -->
+  <rect x="1050" y="192" width="100" height="35" rx="8" fill="#2a2a4f" stroke="#7b2ff7" stroke-width="1"/>
+  <text x="1100" y="216" font-family="Arial, sans-serif" font-size="14" fill="#7b2ff7" text-anchor="middle">Filter</text>
+  
+  <!-- Add Button -->
+  <rect x="1170" y="192" width="100" height="35" rx="8" fill="#7b2ff7"/>
+  <text x="1220" y="216" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">+ Add</text>
+  
+  <!-- Kanban Board Columns -->
+  
+  <!-- Column 1: To Do -->
+  <rect x="140" y="260" width="320" height="510" rx="12" fill="#1e1e3f"/>
+  <text x="160" y="295" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#aaa">TO DO</text>
+  <circle cx="430" cy="287" r="12" fill="#2a2a4f"/>
+  <text x="430" y="293" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#aaa" text-anchor="middle">8</text>
+  
+  <!-- Task Card 1 -->
+  <rect x="160" y="320" width="280" height="110" rx="10" fill="#2a2a4f"/>
+  <rect x="160" y="320" width="280" height="6" rx="3" fill="#f107a3"/>
+  <text x="175" y="350" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff">Redesign landing page</text>
+  <text x="175" y="375" font-family="Arial, sans-serif" font-size="12" fill="#aaa">Update hero section and CTA</text>
+  <circle cx="180" cy="405" r="12" fill="#f107a3"/>
+  <text x="200" y="410" font-family="Arial, sans-serif" font-size="11" fill="#aaa">Design</text>
+  <text x="405" y="410" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="end">Due: Dec 20</text>
+  
+  <!-- Task Card 2 -->
+  <rect x="160" y="450" width="280" height="110" rx="10" fill="#2a2a4f"/>
+  <rect x="160" y="450" width="280" height="6" rx="3" fill="#00d4ff"/>
+  <text x="175" y="480" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff">API Integration</text>
+  <text x="175" y="505" font-family="Arial, sans-serif" font-size="12" fill="#aaa">Connect payment gateway</text>
+  <circle cx="180" cy="535" r="12" fill="#00d4ff"/>
+  <text x="200" y="540" font-family="Arial, sans-serif" font-size="11" fill="#aaa">Backend</text>
+  <text x="405" y="540" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="end">Due: Dec 22</text>
+  
+  <!-- Column 2: In Progress -->
+  <rect x="480" y="260" width="320" height="510" rx="12" fill="#1e1e3f"/>
+  <text x="500" y="295" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#aaa">IN PROGRESS</text>
+  <circle cx="770" cy="287" r="12" fill="#2a2a4f"/>
+  <text x="770" y="293" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#aaa" text-anchor="middle">5</text>
+  
+  <!-- Task Card 3 -->
+  <rect x="500" y="320" width="280" height="110" rx="10" fill="#2a2a4f"/>
+  <rect x="500" y="320" width="280" height="6" rx="3" fill="#ffd700"/>
+  <text x="515" y="350" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff">User authentication</text>
+  <text x="515" y="375" font-family="Arial, sans-serif" font-size="12" fill="#aaa">OAuth implementation</text>
+  <circle cx="520" cy="405" r="12" fill="#ffd700"/>
+  <text x="540" y="410" font-family="Arial, sans-serif" font-size="11" fill="#aaa">Security</text>
+  <rect x="680" y="395" width="80" height="20" rx="10" fill="#7b2ff7" opacity="0.3"/>
+  <text x="720" y="409" font-family="Arial, sans-serif" font-size="10" fill="#7b2ff7" text-anchor="middle">50% done</text>
+  
+  <!-- Task Card 4 -->
+  <rect x="500" y="450" width="280" height="110" rx="10" fill="#2a2a4f"/>
+  <rect x="500" y="450" width="280" height="6" rx="3" fill="#00ff88"/>
+  <text x="515" y="480" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff">Database optimization</text>
+  <text x="515" y="505" font-family="Arial, sans-serif" font-size="12" fill="#aaa">Query performance tuning</text>
+  <circle cx="520" cy="535" r="12" fill="#00ff88"/>
+  <text x="540" y="540" font-family="Arial, sans-serif" font-size="11" fill="#aaa">DevOps</text>
+  <rect x="680" y="525" width="80" height="20" rx="10" fill="#7b2ff7" opacity="0.3"/>
+  <text x="720" y="539" font-family="Arial, sans-serif" font-size="10" fill="#7b2ff7" text-anchor="middle">75% done</text>
+  
+  <!-- Column 3: Done -->
+  <rect x="820" y="260" width="320" height="510" rx="12" fill="#1e1e3f"/>
+  <text x="840" y="295" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#aaa">DONE</text>
+  <circle cx="1110" cy="287" r="12" fill="#2a2a4f"/>
+  <text x="1110" y="293" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#aaa" text-anchor="middle">12</text>
+  
+  <!-- Task Card 5 -->
+  <rect x="840" y="320" width="280" height="110" rx="10" fill="#2a2a4f"/>
+  <rect x="840" y="320" width="280" height="6" rx="3" fill="#00ff88"/>
+  <text x="855" y="350" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff">Mobile responsive design</text>
+  <text x="855" y="375" font-family="Arial, sans-serif" font-size="12" fill="#aaa">All breakpoints tested</text>
+  <circle cx="860" cy="405" r="12" fill="#00ff88"/>
+  <text x="880" y="410" font-family="Arial, sans-serif" font-size="11" fill="#aaa">Frontend</text>
+  <circle cx="1090" cy="405" r="15" fill="#00ff88"/>
+  <text x="1090" y="411" font-family="Arial, sans-serif" font-size="18" fill="#1e1e3f" text-anchor="middle">✓</text>
+  
+  <!-- Task Card 6 -->
+  <rect x="840" y="450" width="280" height="110" rx="10" fill="#2a2a4f"/>
+  <rect x="840" y="450" width="280" height="6" rx="3" fill="#00ff88"/>
+  <text x="855" y="480" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff">Testing suite setup</text>
+  <text x="855" y="505" font-family="Arial, sans-serif" font-size="12" fill="#aaa">Jest + React Testing Library</text>
+  <circle cx="860" cy="535" r="12" fill="#00ff88"/>
+  <text x="880" y="540" font-family="Arial, sans-serif" font-size="11" fill="#aaa">QA</text>
+  <circle cx="1090" cy="535" r="15" fill="#00ff88"/>
+  <text x="1090" y="541" font-family="Arial, sans-serif" font-size="18" fill="#1e1e3f" text-anchor="middle">✓</text>
+  
+  <!-- Progress Indicator -->
+  <rect x="1150" y="115" width="120" height="30" rx="15" fill="#2a2a4f"/>
+  <text x="1210" y="137" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#00ff88" text-anchor="middle">65% Complete</text>
+</svg>
