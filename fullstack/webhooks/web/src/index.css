@@ -23,3 +23,21 @@
         @apply bg-zinc-950 text-zinc-100 antialiased;
     }
 }
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #27272a; 
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #131316;
+  border-radius: 9999px;
+}
+
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #131316 #27272a;
+}
