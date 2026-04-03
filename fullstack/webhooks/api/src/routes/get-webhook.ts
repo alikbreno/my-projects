@@ -22,20 +22,19 @@ export const getWebhook: FastifyPluginAsyncZod = async (app) => {
       },
     },
     async (request, reply) => {
-        const { id } = request.params
+      const { id } = request.params
 
-        const result = await db
-            .select()
-            .from(webhooks)
-            .where(eq(webhooks.id, id))
-            .limit(1)
-        
-        if (result.length === 0) {
-            return reply.status(404).send({ message: 'Webhook not found' })
-        }
+      const result = await db
+        .select()
+        .from(webhooks)
+        .where(eq(webhooks.id, id))
+        .limit(1)
 
-        return reply.send(result[0])
-    
+      if (result.length === 0) {
+        return reply.status(404).send({ message: 'Webhook not found' })
+      }
+
+      return reply.send(result[0])
     },
   )
 }

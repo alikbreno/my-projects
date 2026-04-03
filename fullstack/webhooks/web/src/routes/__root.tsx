@@ -6,21 +6,21 @@ import { Sidebar } from '../components/sidebar'
 const queryClient = new QueryClient()
 
 const RootLayout = () => (
-    <QueryClientProvider client={queryClient}>
-        <div className="h-screen bg-zinc-900">
-            <Group orientation="horizontal">
-                <Panel defaultSize="20%" minSize="15%" maxSize="40%">
-                    <Sidebar />
-                </Panel>
+  <QueryClientProvider client={queryClient}>
+    <div className="h-screen bg-zinc-900 scrollbar-custom">
+      <Group orientation="horizontal">
+        <Panel defaultSize="20%" minSize="15%" maxSize="40%">
+          <Sidebar />
+        </Panel>
 
-                <Separator className="w-px bg-zinc-700 hover:bg-zinc-600 transition-colors duration-150" />
+        <Separator className="w-px bg-zinc-700 hover:bg-zinc-600 transition-colors duration-150" />
 
-                <Panel defaultSize="80%" minSize="60%">
-                <Outlet />
-                </Panel>
-            </Group>
-        </div>
-    </QueryClientProvider>
+        <Panel defaultSize="80%" minSize="60%">
+          <Outlet />
+        </Panel>
+      </Group>
+    </div>
+  </QueryClientProvider>
 )
 
 export const Route = createRootRoute({ component: RootLayout })

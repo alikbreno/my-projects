@@ -1,5 +1,5 @@
-import { db } from "."
-import { webhooks } from "./schema"
+import { db } from '.'
+import { webhooks } from './schema'
 import { faker } from '@faker-js/faker'
 
 const stripeEvents = [
@@ -34,15 +34,22 @@ function randomStripePayload(eventType: string) {
         object: 'payment_intent',
         amount,
         currency,
-        status: eventType.includes('failed') ? 'requires_payment_method' : 'succeeded',
+        status: eventType.includes('failed')
+          ? 'requires_payment_method'
+          : 'succeeded',
         customer: `cus_${faker.string.alphanumeric(16)}`,
         invoice: `in_${faker.string.alphanumeric(16)}`,
       },
-      previous_attributes: eventType.includes('updated') ? { status: 'past_due' } : undefined,
+      previous_attributes: eventType.includes('updated')
+        ? { status: 'past_due' }
+        : undefined,
     },
     livemode: false,
     pending_webhooks: faker.number.int({ min: 0, max: 1 }),
-    request: { id: `req_${faker.string.alphanumeric(24)}`, idempotency_key: null },
+    request: {
+      id: `req_${faker.string.alphanumeric(24)}`,
+      idempotency_key: null,
+    },
     type: eventType,
   }
 }
@@ -65,7 +72,7 @@ async function seed() {
         event: eventType,
       },
       headers: {
-        'accept': 'application/json',
+        accept: 'application/json',
         'content-type': 'application/json',
         'stripe-signature': `t=${Date.now()}, v1=${faker.string.hexadecimal({ length: 128, casing: 'lower' }).slice(2)}`,
         'user-agent': `Stripe/2024-11-01 (+https://stripe.com/docs/webhooks)`,
@@ -78,7 +85,9 @@ async function seed() {
   await db.delete(webhooks).execute()
   await db.insert(webhooks).values(records)
 
-  console.log(`Seed aplicado: ${records.length} registros webhooks (Stripe-like) inseridos.`)
+  console.log(
+    `Seed aplicado: ${records.length} registros webhooks (Stripe-like) inseridos.`,
+  )
 }
 
 seed().catch((error) => {
