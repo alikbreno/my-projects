@@ -1,0 +1,62 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Usuario {
+  id            String   @id @default(uuid())
+  nome          String
+  email         String   @unique
+  senha         String
+  telefone      String?
+  cpf           String   @unique
+  eAdmin        Boolean  @default(false)
+  dtCriacao     DateTime @default(now())
+  dtAtualizacao DateTime @updatedAt
+
+  reservas Reserva[]
+
+  @@map("usuarios")
+}
+
+model Sala {
+  id            String   @id @default(uuid())
+  nome          String
+  capacidade    Int
+  descricao     String?
+  precoLocacao  Decimal  @db.Decimal(10, 2)
+  dtCriacao     DateTime @default(now())
+  dtAtualizacao DateTime @updatedAt
+
+  reservas Reserva[]
+
+  @@map("salas")
+}
+
+// Guarda horarioInicio/horarioFim como string "HH:mm" (sempre com zero à
+// esquerda) de propósito: nesse formato a comparação lexicográfica de
+// string já funciona como comparação de horário, o que permite usar os
+// filtros `lt`/`gt`/`lte`/`gte` do Prisma direto, sem precisar de SQL cru.
+model Reserva {
+  id            String   @id @default(uuid())
+  data          DateTime @db.Date
+  horarioInicio String
+  horarioFim    String
+  dtCriacao     DateTime @default(now())
+  dtAtualizacao DateTime @updatedAt
+
+  usuarioId String
+  usuario   Usuario @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+
+  salaId String
+  sala   Sala   @relation(fields: [salaId], references: [id], onDelete: Cascade)
+
+  @@index([salaId, data])
+  @@index([usuarioId])
+  @@map("reservas")
+}
