@@ -12,8 +12,8 @@ type SalaCardProps = {
 };
 
 const imagens = [
-  "/sala-reuniao.jpg",
-  "/mesa-compartilhada.jpg",
+  "/sala-reuniao.webp",
+  "/mesa-compartilhada.webp",
   "/salas-privativas.webp",
 ];
 

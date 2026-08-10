@@ -24,9 +24,9 @@ export default function LoginSection() {
             O que você encontra aqui
           </p>
           <ul className="mt-3 space-y-2 text-sm text-zinc-400">
-            <li>• Acesso rápido ao seu painel de reservas.</li>
-            <li>• Experiência preparada para autenticação JWT.</li>
-            <li>• Fluxo pronto para integração com o backend futuro.</li>
+            <li>• Acesse reservas anteriores e futuras em um só lugar.</li>
+            <li>• Veja salas e horários em tempo real.</li>
+            <li>• Receba uma experiência mais rápida e organizada.</li>
           </ul>
         </div>
       </div>

@@ -2,6 +2,14 @@
 
 Aplicação full stack para gestão de salas de coworking e reservas. Usuários podem consultar a disponibilidade, criar e administrar suas próprias reservas; administradores também têm acesso à gestão de salas, usuários, reservas e indicadores do negócio.
 
+## Aplicação em Produção
+
+- **Frontend:** https://coworking-nine-rouge.vercel.app/
+- **API:** https://my-projects-p6jx.onrender.com
+- **Documentação (Swagger):** https://my-projects-p6jx.onrender.com/docs
+
+> Importante: Por estar em uma hospedagem gratuita, o servidor se desliga automaticamente quando fica parado. O primeiro contato com a API pode exigir um pouco de paciência, levando até um minuto para que tudo volte a funcionar.
+
 ## Principais funcionalidades
 
 - Cadastro, login e sessão com JWT.
