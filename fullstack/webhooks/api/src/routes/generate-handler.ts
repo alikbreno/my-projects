@@ -82,7 +82,7 @@ export const generateHandler: FastifyPluginAsyncZod = async (app) => {
 
                 Generate a complete TypeScript webhook handler that can correctly validate and process all provided event examples.
 
-                remember: return only the code and do not return within \`\`\`typescript or any other markdown symbols, do not include any introduction or text before or after the code.
+                remember: return only the code Keep all code comments short: wrap them into multiple lines of at most 80 characters each, splitting at word boundaries and repeating the comment marker on every line, so no comment exceeds the width of the code. and do not return within \`\`\`typescript or any other markdown symbols, do not include any introduction or text before or after the code.
             `.trim(),
       })
 
