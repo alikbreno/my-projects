@@ -2,6 +2,14 @@
 
 Aplicacao para capturar, armazenar e inspecionar requisicoes de webhook. O projeto possui uma API em Fastify, um painel web em React e PostgreSQL como banco de dados.
 
+## Aplicação em Produção
+
+- **Frontend:** https://webhookinspector-three.vercel.app
+- **API:** https://webhookinspectorapi.onrender.com
+- **Documentação (Swagger):** https://webhookinspectorapi.onrender.com/docs
+
+> Importante: Por estar em uma hospedagem gratuita, o servidor se desliga automaticamente quando fica parado. O primeiro contato com a API pode exigir um pouco de paciência, levando até um minuto para que tudo volte a funcionar.
+
 ## Funcionalidades
 
 - Captura requisicoes de qualquer metodo HTTP em `/capture/*`.
