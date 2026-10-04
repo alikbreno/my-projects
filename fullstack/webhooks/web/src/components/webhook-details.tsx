@@ -1,9 +1,9 @@
 import { useSuspenseQuery } from '@tanstack/react-query'
-import { webhookDetailSchema } from '../http/schemas/webhooks'
 import { CodeBlock } from './ui/code-block'
 import { SectionTitle } from './section-title'
 import { SectionDataTable } from './section-data-table'
 import { WebhookDetailHeader } from './webhook-detail-header'
+import { getWebhook } from '../http/hooks/webhooks'
 
 interface WebhookDetailsProps {
   id: string
@@ -12,12 +12,7 @@ interface WebhookDetailsProps {
 export function WebhookDetails({ id }: WebhookDetailsProps) {
   const { data } = useSuspenseQuery({
     queryKey: ['webhook', id],
-    queryFn: async () => {
-      const response = await fetch(`https://webhookinspectorapi.onrender.com/api/webhooks/${id}`)
-      const data = await response.json()
-
-      return webhookDetailSchema.parse(data)
-    },
+    queryFn: () => getWebhook(id),
   })
 
   const overviewData = [

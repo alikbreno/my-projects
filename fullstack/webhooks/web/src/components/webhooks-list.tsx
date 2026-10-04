@@ -1,10 +1,10 @@
 import { useSuspenseInfiniteQuery } from "@tanstack/react-query";
 import { WebhooksListItem } from "./webhooks-list-item";
-import { webhookListSchema } from "../http/schemas/webhooks";
 import { Loader2, Wand2, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { CodeBlock } from "./ui/code-block";
+import { generateHandler, getWebhooks } from "../http/hooks/webhooks";
 
 export function WebhooksList() {
   const loadMoreRef = useRef<HTMLDivElement>(null);
@@ -20,16 +20,7 @@ export function WebhooksList() {
     useSuspenseInfiniteQuery({
       queryKey: ["webhooks"],
       queryFn: async ({ pageParam }) => {
-        const url = new URL("https://webhookinspectorapi.onrender.com/api/webhooks");
-
-        if (pageParam) {
-          url.searchParams.set("cursor", pageParam);
-        }
-
-        const response = await fetch(url);
-        const data = await response.json();
-
-        return webhookListSchema.parse(data);
+        return getWebhooks(pageParam);
       },
       getNextPageParam: (lastPage) => {
         return lastPage.nextCursor ?? undefined;
@@ -82,17 +73,7 @@ export function WebhooksList() {
     setIsGenerating(true);
 
     try {
-      const response = await fetch("https://webhookinspectorapi.onrender.com/api/generate", {
-        method: "POST",
-        body: JSON.stringify({ webhookIds: checkedWebhooksIds }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-
-      type GenerateResponse = { code: string };
-
-      const data: GenerateResponse = await response.json();
+      const data = await generateHandler(checkedWebhooksIds);
 
       setGeneratedHandlerCode(data.code);
     } finally {
