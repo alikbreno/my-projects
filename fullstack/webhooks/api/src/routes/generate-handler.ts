@@ -1,8 +1,8 @@
 import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
 import { generateText } from 'ai'
 import { z } from 'zod'
-import { webhooks } from '@/db/schema'
-import { db } from '@/db'
+import { webhooks } from '../db/schema'
+import { db } from '../db'
 import { inArray } from 'drizzle-orm'
 import { google } from '@ai-sdk/google'
 
